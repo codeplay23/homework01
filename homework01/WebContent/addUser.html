@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="EUC-KR">
+<title>homework01</title>
+</head>
+<body>
+
+<form method="Post" action='AddUser'>
+<fieldset>
+<tr><th align="left">개인정보</th><span align="right"><input type='BUTTON' value='?'>도움말</span></td></tr>
+
+<hr size="1"/>
+<hr/>
+
+<table>
+<tr><th align="left">*이름(한글실명)</th><td><input type="text"></td>
+<th>*성별 남</th><td><input type="radio" name="sex" value="male" checked/>&nbsp;여<input type="radio" name="sex" value="female"/></td></tr>
+
+<tr><th align="left">*생년월일</th><td> <input type="text" name="year"/>년&nbsp;
+<select name="month"><optgroup label="선택">월
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option></select>&nbsp;
+
+<select name="day"><optgroup label="선택">일
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option></select>&nbsp;&nbsp;
+
+
+<input type="radio" name="calendar" value="solar" checked/>양력
+<input type="radio" name="calendar" value="lunar"/>음력
+<input type="radio" name="calendar" value="leap"/>(윤달)</td></tr>
+
+
+
+<tr><th align="left">*최종학력</th> <td><select><optgroup label="선택하세요.">
+<option>고졸</option>
+<option>초대졸</option>
+<option>대졸</option>
+<option>대학원졸</option></select></td></tr>
+
+
+
+
+<tr><th align="left">*직업</th><td><select><optgroup label="선택하세요."> 
+<option>공무원</option>
+<option>회사원</option>
+<option>무직</option>
+<option>자영업</option>
+<option>학생</option></select>&nbsp;&nbsp; 소속<input type="text"></td></tr>
+
+
+
+
+<tr><th align="left">*결혼여부</th><td><input type="radio" name="single" value="unmarried" checked/>미혼<input type="radio" name="couple" value="married"/>기혼&nbsp;
+자녀수&nbsp;&nbsp;
+<select>
+<optgrup label="선택">
+<option>1명</option>
+<option>2명</option>
+<option>3명</option></select></td></tr>
+
+
+<tr><th align="left" rowspan="3">*연락처</th>
+
+<tr><td>전화번호&nbsp;<input type="text">-<input type="text">-<input type="text">&nbsp;
+<input type="radio" name="home" checked/>집
+<input type="radio" name="work"/>직장</td></tr>
+
+<tr><td>휴대폰&nbsp;&nbsp; <input type="text" name="tel1">-<input type="text" name="tel2">-<input type="text" name="tel3">&nbsp;
+이동통신사<input type="radio" name="skt" value="sk" checked/>SKT
+<input type="radio" name="ktf" value="kt" />KTF
+<input type="radio" name="lgt" value="lg" />LGT</td></tr>
+
+<tr>전화번호나 휴대폰 번호 2가지 중 하나는 반드시 입력하셔야 합니다.</tr>
+
+
+
+
+
+<tr><th align="left">*거주지 주소</th> <td><input type="submit" value='국내'>&nbsp;
+<input type="submit" value='국외'>&nbsp;<input type="text" name="address"></td></tr>
+
+</table><br>
+<input type="submit" value='회원가입'/>
+
+</form>
+</fieldset>
+</body>
+</html>
